@@ -10,7 +10,20 @@ namespace Dictionnaire
     {
         static void Main(string[] args)
         {
-            de
+            Dictionary<char, string> monPremierDico = new Dictionary<char, string>();
+            monPremierDico['a'] = "machin";
+            monPremierDico['b'] = "truc";
+            monPremierDico['c'] = "bidul";
+
+            Console.WriteLine(monPremierDico.Count());
+
+            Console.ReadKey();
+
+            monPremierDico.Remove('c');
+
+            Console.WriteLine(monPremierDico.Count());
+
+            Console.ReadKey();
         }
     }
 }
